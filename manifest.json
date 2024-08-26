@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Job app automater",
+    "version": "1.0",
+    "description": "Automates filling job applications.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
